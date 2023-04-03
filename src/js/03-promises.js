@@ -30,8 +30,7 @@ function handleSubmit(event) {
   let delayValue = Number(delayEl.value);
   const stepValue = Number(stepEl.value);
   const amountValue = Number(amountEl.value);
-
-  console.log(typeof(amountValue))
+  formEl.reset();
 
   for (let i = 1; i <= amountValue; i += 1) {
     createPromise(i, delayValue) // 
