@@ -26,7 +26,6 @@ const options = {
         startButtonEl.disabled = false;
       } else {
         startButtonEl.disabled = true;
-        // alert("Please choose a date in the future");
         Notiflix.Notify.failure("Please choose a date in the future");
       }
     },
@@ -48,6 +47,7 @@ handleOnStartClick = () => {
     minutesFieldEl.textContent = addLeadingZero(timeLeft.minutes);
     secondsFieldEl.textContent = addLeadingZero(timeLeft.seconds);   
     }, 1000)
+    startButtonEl.setAttribute("disabled","");
 }
 
 startButtonEl.addEventListener('click', handleOnStartClick);
