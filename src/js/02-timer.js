@@ -10,10 +10,10 @@ const daysFieldEl = document.querySelector('[data-days]');
 const hoursFieldEl = document.querySelector('[data-hours]');
 const minutesFieldEl = document.querySelector('[data-minutes]');
 const secondsFieldEl = document.querySelector('[data-seconds]');
+let selectedDate;
+let timerId;
 
 startButtonEl.disabled = true;
-
-let selectedDate;
 
 const options = {
     enableTime: true,
