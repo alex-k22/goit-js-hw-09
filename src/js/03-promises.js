@@ -2,10 +2,10 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 Notiflix.Notify.init({ position: 'center-top' });
 
-formEl = document.querySelector('.form');
-delayEl = document.querySelector('[name="delay"]');
-stepEl = document.querySelector('[name="step"]');
-amountEl = document.querySelector('[name="amount"]');
+const formEl = document.querySelector('.form');
+const delayEl = document.querySelector('[name="delay"]');
+const stepEl = document.querySelector('[name="step"]');
+const amountEl = document.querySelector('[name="amount"]');
 
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
